@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZH | Home</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+</head>
+<body>
+  <div class="home-container">
+    <div class="nav">
+      <%- include("partials/header.ejs") -%>
+    </div>
+
+    <div class="title">
+      <h1>Hello, World!</h1>
+      <p>
+        welcome to my website! i have built this as a portfolio to showcase my current projects
+        as well as a grounds for learning and sharing new ideas
+      </p>
+      <p>
+        i hope you enjoy!
+      </p>
+    </div>
+    <canvas class="background" height="1132"></canvas>
+  </div>
+
+  <footer class="main-footer">
+    <%- include("partials/footer.ejs") -%>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script>
+  window.onload = function() {
+    Particles.init({
+      selector: '.background',
+      connectParticles: true,
+      minDistance: 1000,
+      sizeVariations: 1,
+      maxParticles: 10,
+      color: '#474b4f'
+    });
+  };
+  </script>
+</body>
+</html>

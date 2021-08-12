@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZH | Projects</title>
+  <link rel="stylesheet" href="css/projects.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+</head>
+  <body>
+    <%- include("partials/header.ejs") -%>
+    <div class="content-container">
+      <div class="page-title">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="grid-container">
+
+        <div class="grid-content" style="animation-name: moveUp; ">
+          <div class="content-img" style="background-image: url(../img/pietro-jeng-n6B49lTx7NM-unsplash.jpg)"></div>
+            <div class="content-text">
+              <h1>machine learning demo</h1>
+              <div class="invis-text">
+                <p>
+                  a simple application built with python that allows the user to play with a neural network
+                  to understand what factors effect its results
+                </p>
+                <a href="https://github.com/HZ-2000/Machine-Learning-Demo.git">link></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="grid-content" style="animation-name: moveUp; animation-delay: 1s; ">
+          <div class="content-img" style="background-image: url(../img/matthew-smith-Rfflri94rs8-unsplash.jpg)"></div>
+            <div class="content-text">
+              <h1>personal website</h1>
+              <div class="invis-text">
+                <p>
+                  this is the website you are currently viewing!
+                  it is built on node js, express, and ejs, and will one day be home to more exciting ideas
+                </p>
+                <a href="https://github.com/HZ-2000/Personal-Website.git">link></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="grid-content" style="animation-name: moveUp; animation-delay: 2s; ">
+          <div class="content-img" style="background-image: url(../img/dennis-klein-FzB_512zvP0-unsplash.jpg)"></div>
+            <div class="content-text">
+              <h1>pomodoro timer</h1>
+              <div class="invis-text">
+                <p>
+                  a pomodoro timer that has a task list attached, so that you may log
+                  tasks and use the timer above to manage your time
+                </p>
+                <a href="/pomodoro" target="_blank" rel="noreferrer noopener">link></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="grid-content" style="animation-name: moveUp; animation-delay: 3s; ">
+          <div class="content-img" style="background-image: url(../img/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg)"></div>
+            <div class="content-text">
+              <h1>future endeavors</h1>
+              <div class="invis-text">
+                <p>
+                  cyber security, robotics, embeded systems....
+                </p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") -%>
+  </body>
+  <script>
+    const gridItems = document.querySelectorAll('.grid-content')
+
+    gridItems.forEach(gridItem => {
+      gridItem.addEventListener('mouseover', () => {
+        gridItem.childNodes[1].classList.add('img-darken');
+      })
+
+      gridItem.addEventListener('mouseout', () => {
+        gridItem.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
+</html>

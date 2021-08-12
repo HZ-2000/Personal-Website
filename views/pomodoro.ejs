@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZH | Pomodoro</title>
+  <link rel="stylesheet" href="css/pomodoro.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+</head>
+  <body>
+    <span id="time"></span>
+    <div id="status">Working</div>
+
+    <div id="stopwatch">
+      00:00
+    </div>
+
+    <ul id="buttons">
+      <li><button onclick="startTimer()">Start</button></li>
+      <li><button onclick="stopTimer()">Stop</button></li>
+
+      <li><button onclick="resetTimer()">Reset</button></li>
+    </ul>
+
+    <div class="main_block">
+        <div id="display_counts">
+          <div id="pom_counter">
+            complete: 0
+          </div>
+          <div id="break_counter">
+            next 20min break in: 0 pomodoros
+          </div>
+        </div>
+    </div>
+
+    <div class="JournalHeader">
+      <h1 id="JournalTitle">Journal</h1>
+
+      <div class="JournalControls">
+        <button id="createButton" onclick="create()">+</button>
+      </div>
+    </div>
+
+    <div id="JournalEntries">
+    </div>
+  </body>
+  <script>
+    <%- include("../public/js/pomodoro.js") -%>
+  </script>
+</html>

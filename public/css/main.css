@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #222629;
+  font-family: "Major Mono Display";
+}
+
+.background {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.home-container {
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  animation-name: moveUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+}
+
+.title h1 {
+  width: 100%;
+  top: 30%;
+  font-size: 4.4em;
+  color: transparent;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.title p{
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: transparent;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0%   { color: transparent}
+  100%  { color: white}
+}
+
+@keyframes moveUp {
+  0%   { top: 1%; opacity: 0% }
+  100%  { top: 0%; opacity: 100%;}
+}

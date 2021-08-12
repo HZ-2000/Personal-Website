@@ -1,0 +1,40 @@
+.footer-container {
+  font-family: "Major Mono Display";
+  background-color: #222629;
+}
+
+.footer-wrapper {
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
+.footer-wrapper > .links > div {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+.link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.link-wrapper a {
+  color: #86c232;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.link-wrapper:hover {
+  border-bottom: 1px solid #86c232;
+}
+
+.link-wrapper a:hover {
+  color: #86c232;
+}

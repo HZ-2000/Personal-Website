@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZH | Contact</title>
+  <link rel="stylesheet" href="css/contact.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+</head>
+<body>
+  <%- include("partials/header.ejs") -%>
+
+  <div class="form-container">
+    <form class="contact-form">
+      <h2>contact</h2>
+      <input type="text" id="name" placeholder="Name"><br>
+      <input type="email" id="email" placeholder="Email"><br>
+      <input type="text" id="subject" placeholder="Subject"><br>
+      <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea><br>
+      <input type="submit" class="submit" value="Send Message">
+
+      <div class="list-email">
+        <h3>z4chheim@gmail.com</h3>
+      </div>
+    </form>
+
+  </div>
+
+  <%- include("partials/footer.ejs") -%>
+
+  <script>
+    //<%- include("../public/js/contact.js") -%>
+  </script>
+</body>
+</html>

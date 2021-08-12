@@ -1,0 +1,43 @@
+.container {
+  font-family: "Major Mono Display";
+}
+
+.nav-wrapper {
+  display: flex;
+  padding: 20px;
+}
+
+.left-side {
+  display: flex;
+  font-size: 1.1em;
+}
+
+.signature {
+  font-size: 1.1em;
+  color: #86c232;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+.link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.link-wrapper a {
+  color: #86c232;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.link-wrapper:hover {
+  border-bottom: 1px solid #86c232;
+}
+
+.link-wrapper a:hover {
+  color: #86c232;
+}
