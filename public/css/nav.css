@@ -1,25 +1,21 @@
 .container {
   font-family: "Major Mono Display";
+  font-size: 1.1em;
+  color: #86c232;
 }
 
 .nav-wrapper {
   display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .left-side {
   display: flex;
-  font-size: 1.1em;
-}
-
-.signature {
-  font-size: 1.1em;
-  color: #86c232;
 }
 
 .nav-wrapper > .left-side > div {
   margin-right: 20px;
-  font-size: 1em;
 }
 
 .link-wrapper {
@@ -29,15 +25,10 @@
 }
 
 .link-wrapper a {
-  color: #86c232;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .link-wrapper:hover {
   border-bottom: 1px solid #86c232;
-}
-
-.link-wrapper a:hover {
-  color: #86c232;
 }

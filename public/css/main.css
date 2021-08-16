@@ -15,7 +15,6 @@ body {
 }
 
 .nav {
-  position: absolute;
   animation-name: moveUp;
   animation-duration: 2s;
   animation-fill-mode: forwards;
