@@ -32,3 +32,9 @@
 .link-wrapper:hover {
   border-bottom: 1px solid #86c232;
 }
+
+@media (max-width: 992px) {
+  .right-side {
+    display: none;
+  }
+}
