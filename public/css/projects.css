@@ -87,3 +87,18 @@ body {
   0%   { color: transparent}
   100%  { color: white}
 }
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .invis-text {
+    color: white;
+  }
+
+  .invis-text a {
+    color: white;
+  }
+}
