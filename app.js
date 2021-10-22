@@ -9,7 +9,7 @@ app.use("/css", express.static(__dirname + 'public/css'))
 
 app.set('view engine', 'ejs')
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
   res.render("index")
 })
 
@@ -28,8 +28,5 @@ app.get('/pomodoro', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render("contact")
 })
-
-//app.post('/contact', (req, res) =>{
-//})
 
 app.listen(port, () => {console.log(`Listening on Port: ${port}`)})
