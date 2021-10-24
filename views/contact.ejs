@@ -24,7 +24,9 @@
   </div>
 
   <div class="Resume-link">
-    <a href="/public/img/Resume.png">Resume link</a>
+    <% files.map(file => { %>
+      <a href="<%= file.url %>">Resume link</a>
+    <% }) %>
   </div>
 
   <%- include("partials/footer.ejs") -%>
