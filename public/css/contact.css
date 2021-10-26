@@ -47,3 +47,29 @@ img {
   text-decoration: none;
   color: #61892f;
 }
+
+@media (max-width: 992px) {
+
+  .list-email {
+    padding-top: 10px;
+    font-size: .9em;
+  }
+
+  .list-email h2{
+    font-size: 1.6em;
+  }
+
+  .Resume-header {
+    font-size: 1.6em;
+  }
+
+  .Resume-link {
+    font-size: 1.6em;
+    padding: 20px;
+  }
+
+  img {
+    max-width: 95%;
+    height: auto;
+  }
+}
